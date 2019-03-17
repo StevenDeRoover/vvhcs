@@ -1,0 +1,28 @@
+{
+  "name": "activities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack",
+    "cppackage": "copy package.json dist",
+    "deploy": "yarn build && yarn cppackage && cd dist && gcloud functions deploy activities --trigger-http"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "jasmine": "^3.3.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "googleapis": "^38.0.0"
+  }
+}
