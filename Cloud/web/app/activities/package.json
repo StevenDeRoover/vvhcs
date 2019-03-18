@@ -11,7 +11,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cpyml": "copy app.yaml build",
+    "deploy": "yarn cpyml && cd build && gcloud app deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
